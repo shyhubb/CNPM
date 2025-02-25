@@ -3,7 +3,7 @@ class ictu{
     public static int Ictu(int x ){
        int res = 0;
        for(int i = 1 ; i <= x ; i++){
-        res += i * 11;
+        res += i * 10 + i;
        }
        return res;
     }
