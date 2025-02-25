@@ -1,9 +1,13 @@
+
 import java.util.Scanner;
 class ictu{
     public static int Ictu(int x ){
        int res = 0;
        for(int i = 1 ; i <= x ; i++){
-        res += i * 10 + i;
+        String temp = String.valueOf(i);
+        temp = temp + temp;
+        int num = Integer.parseInt(temp);
+        res += num;
        }
        return res;
     }
